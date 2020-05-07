@@ -1,0 +1,26 @@
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.exe
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.deps.json
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.runtimeconfig.json
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.runtimeconfig.dev.json
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.dll
+D:\==C# Scripts\AlgDat\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.pdb
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.csprojAssemblyReference.cache
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.csproj.CoreCompileInputs.cache
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.AssemblyInfoInputs.cache
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.AssemblyInfo.cs
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.dll
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.pdb
+D:\==C# Scripts\AlgDat\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.genruntimeconfig.cache
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.exe
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.deps.json
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.runtimeconfig.json
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.runtimeconfig.dev.json
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.dll
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\bin\Debug\netcoreapp3.1\AlgDat.pdb
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.csprojAssemblyReference.cache
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.csproj.CoreCompileInputs.cache
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.AssemblyInfoInputs.cache
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.AssemblyInfo.cs
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.dll
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.pdb
+J:\education\Semester4\Algorithmen_und_Datenstrukturen\AlgDatprogramm\AlgDat\obj\Debug\netcoreapp3.1\AlgDat.genruntimeconfig.cache

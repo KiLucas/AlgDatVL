@@ -29,7 +29,7 @@ namespace AlgDat
             if (n != null)
             {
                 TraverseInorder(n.left);
-                Console.WriteLine(n);
+                Console.WriteLine(n.element);
                 TraverseInorder(n.right);
             }
         }
@@ -38,7 +38,7 @@ namespace AlgDat
         {
             if (n != null)
             {
-                Console.WriteLine(n);
+                Console.WriteLine(n.element);
                 TraverseInorder(n.left);
                 TraverseInorder(n.right);
             }
@@ -50,7 +50,30 @@ namespace AlgDat
             {
                 TraverseInorder(n.left);
                 TraverseInorder(n.right);
-                Console.WriteLine(n);
+                Console.WriteLine(n.element);
+            }
+        }
+
+        public static void Intendprint(Node n, int e) //hilfsmethode für treeprint
+        {
+            string intend = "";
+
+            for (int i = 0; i < e; i++)
+            {
+                intend += "       ";
+            }
+            intend += "-- ";
+            
+            Console.WriteLine(intend + n.element);
+        }
+
+        public static void TreePrint(Node n, int e)
+        {
+            if (n != null)
+            {
+                TreePrint(n.right, e + 1);
+                Intendprint(n, e);
+                TreePrint(n.left, e + 1);
             }
         }
 

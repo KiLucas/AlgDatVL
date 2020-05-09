@@ -55,7 +55,7 @@ namespace AlgDat
         {
             Console.WriteLine("---- entering Search Method ----");
             Tree.Node a = t.Root;
-            while (a.element != e && a != null)
+            while (a != null && a.element != e )
             {
                 if (e < a.element)
                 {
@@ -79,7 +79,7 @@ namespace AlgDat
             return a;
         }
 
-        (Tree.Node ,Tree.Node, string) Search(Tree.Node a, int e) //helping method for Delete AlgDat[75]
+        static (Tree.Node ,Tree.Node, string) Search(Tree.Node a, int e) //helping method for Delete AlgDat[75]
         {
             Tree.Node preda=null;
             string dir = "";
@@ -109,8 +109,11 @@ namespace AlgDat
             Tree.Node b = null;
             Tree.Node preda = null;
             Tree.Node a = t.Root;
-
+            
             string dir="";
+            (a, preda, dir)=Search(a,e);
+
+            
             Console.WriteLine("---- now inside Delete Method (node called a, element e) ----");
 
             if (a == null) //no element e => dont do anything
@@ -243,24 +246,13 @@ namespace AlgDat
             {
                 Insert(test, i); 
             }
+            Console.WriteLine("Inorder:");
+            Console.WriteLine();
+            Tree.TraverseInorder(test.Root);
 
-            Tree.Node testsearch = Search(test, 95);
+            Tree.TreePrint(test.Root, 0);
 
-            Console.WriteLine(testsearch.element);
-
-            Delete(test, 95);
-
-            if (Search(test,95) == null)
-            {
-                Console.WriteLine("95 deleted");
-
-            }
-            Console.WriteLine("Searching..");
-
-            if (Search(test,95) == null)
-            {
-
-            }
+            Console.ReadKey();
 
             
         }

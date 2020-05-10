@@ -32,6 +32,33 @@ namespace AlgDat
             Console.WriteLine("Press D to delete a node from your tree");
             Console.WriteLine("Press P to print your Tree with a grapical solution");
         }
+        public static void PrintCreateSuggestions()
+        {
+            Console.WriteLine("--- Create a new Tree ---");
+            Console.WriteLine("enter the root node of your integer tree and press enter: ");
+        }
+        public static void PrintInsertSuggestions()
+        {
+            Console.WriteLine("--- Insert a node to your Tree ---");
+            Console.WriteLine("enter the new node of you integer tree and press enter: ");
+        }
+        public static void PrintDeleteSuggestions()
+        {
+            Console.WriteLine("--- Delete a node of your Tree ---");
+            Console.WriteLine("enter the node to be deleted in your tree");
+        }
+        public static void PrintPreOrderSuggestions()
+        {
+            Console.WriteLine("Traversing tree preorder");
+        }
+        public static void PrintInOrderSuggestions()
+        {
+            Console.WriteLine("Traversing tree inorder");
+        }
+        public static void PrintPostOrderSuggestions()
+        {
+            Console.WriteLine("Traversing tree postorder");
+        }
 
         //Properties to access stuff
         public Node Root  

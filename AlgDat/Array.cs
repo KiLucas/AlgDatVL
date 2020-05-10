@@ -19,6 +19,45 @@ namespace AlgDat
             Console.WriteLine(@"                          |___/ ");
             
         }
+
+        public static void PrintSuggestions()
+        {
+            Console.WriteLine("To Fill the Array just use the append function");
+            Console.WriteLine("no need to specifically create an array, just append your first number");
+            Console.WriteLine("To append an integer press A");
+            Console.WriteLine("To print your array press P");
+            Console.WriteLine("To use the Sequential Search Method, press 1");
+            Console.WriteLine("To go back to the menu before, press backspace");
+        }
+
+        public static void PrintAppendSuggestions()
+        {
+            Console.WriteLine("Enter the Integer to be appended to the Array: ");
+        }
+
+        public static void PrintPrintSuggestions()
+        {
+            Console.WriteLine("printing your Array in a Line and a space in between:");
+        }
+
+        public static void PrintSequSuggestions()
+        {
+            Console.WriteLine("--- Sequential Search ---");
+            Console.WriteLine("Enter the integer you are searching for and press enter");
+            
+        }
+
+
+        //Methods
+
+        public static void PrintArray(int[]array, int alength)
+        {
+            for (int i = 0; i < alength; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+        }
+              
         public static int SequSearch(int[] array, int x)
         {
             int index;

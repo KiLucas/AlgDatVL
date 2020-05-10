@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Xml;
 
@@ -18,23 +19,28 @@ namespace AlgDat
             Console.WriteLine();
         }
 
+        static void PrintSuggestions()
+        {
+            Console.WriteLine("Press 1 to use binary tree program");
+            Console.WriteLine("Press 2 to use Array program");
+        }
+
         static void Main(string[] args)
         {
             
             
             Tree maintree = null;
-            //while loop to run the programm
+            // While loop to run the programm
             ConsoleKeyInfo input;
-            do //outer Loop - Dictionary
+            do // Outer Loop - Dictionary
             {
                 Console.Clear();
                 PrintBanner();
-                Console.WriteLine("Press 1 to use binary tree program");
-                Console.WriteLine("Press 2 to use Array program");
+                PrintSuggestions();
                 input = Console.ReadKey();
                 if (input.Key == ConsoleKey.D1)
                 {
-                    do //innter Loop - Binary Tree
+                    do // Inner Loop - Binary Tree
                     {
 
 
@@ -45,22 +51,19 @@ namespace AlgDat
                         input = Console.ReadKey();
                         if (input.Key == ConsoleKey.C)
                         {
-                            Console.WriteLine("--- Create a new Tree ---");
-                            Console.WriteLine("enter the root node of your integer tree and press enter: ");
+                            Tree.PrintCreateSuggestions();
                             int rootinput = Convert.ToInt32(Console.ReadLine());
                             maintree = new Tree(new Tree.Node(rootinput,null,null));
                         }
                         if (input.Key == ConsoleKey.I)
                         {
-                            Console.WriteLine("--- Insert a node to your Tree ---");
-                            Console.WriteLine("enter the new node of you integer tree and press enter: ");
+                            Tree.PrintInsertSuggestions();
                             int nodeinput = Convert.ToInt32(Console.ReadLine());
                             Tree.Insert(maintree, nodeinput);
                         }
                         if (input.Key == ConsoleKey.D)
                         {
-                            Console.WriteLine("--- Delete a node of your Tree ---");
-                            Console.WriteLine("enter the node to be deleted in your tree");
+                            Tree.PrintDeleteSuggestions();
                             int delinput = Convert.ToInt32(Console.ReadLine());
                             Tree.Delete(maintree, delinput);
                         }
@@ -72,27 +75,74 @@ namespace AlgDat
                         }
                         if (input.Key == ConsoleKey.D1)
                         {
-                            Console.WriteLine("Traversing tree preorder");
+                            Tree.PrintPreOrderSuggestions();
                             Tree.TraversePreorder(maintree.Root);
                         }
                         if (input.Key == ConsoleKey.D2)
                         {
-                            Console.WriteLine("Traversing tree inorder");
+                            Tree.PrintInOrderSuggestions();
                             Tree.TraverseInorder(maintree.Root);
                         }
                         if (input.Key == ConsoleKey.D3)
                         {
-                            Console.WriteLine("Traversing tree postorder");
+                            Tree.PrintPostOrderSuggestions();
                             Tree.TraversePostorder(maintree.Root);
+                        }
+
+                    } while (input.Key != ConsoleKey.Backspace);
+
+                }
+                if (input.Key == ConsoleKey.D2)
+                {
+                    int[] mainarray = new int[2000];
+                    int length = 0;
+
+                    do // Inner Loop - Array
+                    {
+                        Console.Clear();
+                        Array.PrintBanner();
+                        Console.WriteLine();
+                        Array.PrintSuggestions();
+                        input = Console.ReadKey();
+                        
+
+                        
+                        if (input.Key == ConsoleKey.A)
+                        {
+                            Array.PrintAppendSuggestions();
+                            int inputint = Convert.ToInt32(Console.ReadLine());
+                            mainarray[length] = inputint;
+                            length++;
+                            Console.WriteLine("succesfully appended " + inputint + " to array");
+                            Console.ReadKey();
+                        }
+                        if (input.Key == ConsoleKey.P)
+                        {
+                            Array.PrintPrintSuggestions();
+                            Array.PrintArray(mainarray, length);
+                            Console.ReadKey();
+                        }
+                        if (input.Key == ConsoleKey.D1)
+                        {
+                            Array.PrintSequSuggestions();
+                            int inputint = Convert.ToInt32(Console.ReadLine());
+                           
+                            if (mainarray.Contains(inputint))
+                            {
+                                int index = Array.SequSearch(mainarray, inputint);
+                                Console.WriteLine("Found " + inputint + " at index: " + index );
+                                Console.ReadKey();
+                            }
+                            else
+                            {
+                                Console.WriteLine(inputint + " is not in the array");
+                                Console.ReadKey();
+                            }
                         }
 
                         
 
                     } while (input.Key != ConsoleKey.Backspace);
-                }
-                if (input.Key == ConsoleKey.D2)
-                {
-                    Array.PrintBanner();
                 }
                 
                 
